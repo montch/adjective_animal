@@ -6,11 +6,11 @@ require 'adjective_animal/version'
 Gem::Specification.new do |spec|
   spec.name          = "adjective_animal"
   spec.version       = AdjectiveAnimal::VERSION
-  spec.authors       = ["IgniteMark"]
-  spec.email         = ["mark@ignitewithus.com"]
-  spec.summary       = %q{  long desc.}
-  spec.description   = %q{  short desc.}
-  spec.homepage      = ""
+  spec.authors       = ["montch"]
+  spec.email         = ["montch@gmail.com"]
+  spec.summary       = %q{ Creates an adjective and an animal}
+  spec.description   = %q{ No, really, that's all it does}
+  spec.homepage      = "https://github.com/montch/adjective_animal"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

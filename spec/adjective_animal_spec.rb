@@ -37,10 +37,10 @@ describe AdjectiveAnimal do
   it "generates an array of 26 objects with letters A-Z" do
     adjective_animals = AdjectiveAnimal.all
     expect(adjective_animals.length).to eql 26
-    expect(adjective_animals[0].adjective).to start_with 'A'
-    expect(adjective_animals[0].animal).to start_with 'A'
-    expect(adjective_animals[25].adjective).to start_with 'Z'
-    expect(adjective_animals[25].animal).to start_with 'Z'
+    expect(adjective_animals.first.adjective).to start_with 'A'
+    expect(adjective_animals.first.animal).to start_with 'A'
+    expect(adjective_animals.last.adjective).to start_with 'Z'
+    expect(adjective_animals.last.animal).to start_with 'Z'
   end
 
   it "outputs the adjective and animal as two words using to_s" do
