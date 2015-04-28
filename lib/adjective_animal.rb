@@ -28,7 +28,7 @@ module AdjectiveAnimal
         options.length == 1 ? self.starts_with = options.downcase.to_s : self.starts_with = nil
       end
       if options.is_a?(Hash)
-        sym_opts = symbolize_hash(options) #.map { |k, v| [k.to_sym, v] }.to_h
+        sym_opts = symbolize_hash(options)
         if sym_opts.has_key?(:starts_with)
           sym_opts[:starts_with].length == 1 ? self.starts_with = sym_opts[:starts_with].downcase.to_sym : self.starts_with = nil
         end
