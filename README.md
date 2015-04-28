@@ -19,29 +19,34 @@ Or install it yourself as:
 ## Usage
 There are four fun and exciting ways to use adjective_animal:
 
-1. Create a random adjective animal.
+* Create a random adjective animal.
 ```ruby
 aa = AdjectiveAnimal.new
 aa.adjective = "Overjoyed"
 aa.animal = "Beaver"
 ```
 
-2. Create an adjective animal with the same starting letter
+* Create an adjective animal with the same starting letter
 ```ruby
 aa = AdjectiveAnimal.new(:k)
 aa.adjective = "Knowledgeable"
 aa.animal = "Kangaroo"
 ```
 
-3. Create an array of 26 adjective animals that start with the letters A-Z
+* Create an array of 26 adjective animals that start with the letters A-Z
 ```ruby
 aa = AdjectiveAnimal.all
-# [#<AdjectiveAnimal::AdjAni:0x0000010378fe48 @adjective="Accessible", @animal="Alpaca", @starts_with="a">, #<AdjectiveAnimal::AdjAni:0x0000010377ec88 @adjective="Better", @animal="Baboon", @starts_with="b">, #<AdjectiveAnimal::AdjAni:0x000001036949a8 @adjective="Cloudy", @animal="Camel", @starts_with="c">, #<AdjectiveAnimal::AdjAni:0x00000103686dd0 @adjective="Didactic", @animal="Deer", @starts_with="d">
-... to Z
+# [#<AdjectiveAnimal::AdjAni:0x0000010378fe48 @adjective="Accessible", @animal="Alpaca", @starts_with="a">,
+#<AdjectiveAnimal::AdjAni:0x0000010377ec88 @adjective="Better", @animal="Baboon", @starts_with="b">,
+#<AdjectiveAnimal::AdjAni:0x000001036949a8 @adjective="Cloudy", @animal="Camel", @starts_with="c">,
+#<AdjectiveAnimal::AdjAni:0x00000103686dd0 @adjective="Didactic", @animal="Deer", @starts_with="d">
+...] to Z
 ```
 
-4. Fork the gem and add your own stupid stuff to it.  This is a really good way to procrastinate when you are supposed to be working on seed data.
+* Fork the gem and add your own stupid stuff to it.  This is a really good way to procrastinate when you are supposed to be working on seed data.
+
 ##Helpers
+
 ```ruby
 aa = AdjectiveAnimal.new
 # yield both adjective and animal together as a string
@@ -71,7 +76,7 @@ Note: I have only tested one of the above uses, so YMMV.
 
 ## FAQ
 * Q: What about the gem [faker](https://github.com/stympy/faker), isn't that a better gem?
-* A: Yes it is, in pretty much every way imagineable. You should probably use faker.
+* A: Yes it is, in pretty much every way imagineable. You should probably use it.
 
 
 
